@@ -30,6 +30,15 @@ function twoArray2(arr, num){
 console.log('循环方案',twoArray2(arr,2))
 
 
+// 方案三: slice 方案
+function twoArray3(arr, num){
+    var newArr = [];
+    for(var i=0; i<arr.length; i=i+num ){
+        newArr.push(arr.slice(i, i+num ))
+    }
+    return newArr;
+}
+console.log('slice 方案',twoArray2(arr,4))
 
 
 
